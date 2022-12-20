@@ -4,7 +4,6 @@ import {
   Page,
   Content,
   ContentHeader,
-  SupportButton,
 } from '@backstage/core-components';
 import { useEntity } from '@backstage/plugin-catalog-react';
 import { useImages } from '../../hooks/useImages';
