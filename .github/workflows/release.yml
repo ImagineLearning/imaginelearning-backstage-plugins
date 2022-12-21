@@ -1,12 +1,13 @@
 name: Publish Package to npmjs
-
 on:
   release:
     types: [published]
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        plugin: ["@imaginelearning/plugin-aws-ecr-scan", "@imaginelearning/plugin-aws-ecr-scan-backend"]
     steps:
       - uses: actions/checkout@v3
       # Setup .npmrc file to publish to npm
@@ -21,4 +22,4 @@ jobs:
           echo "always-auth = true" >> .npmrc
       - run: yarn install
       - run: yarn tsc
-      - run: yarn publish
+      - run: yarn workspace ${{ matrix.plugin }} publish
