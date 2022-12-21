@@ -1,5 +1,5 @@
 import { DiscoveryApi, IdentityApi } from "@backstage/core-plugin-api";
-import { AwsEcrListImagesRequest, AwsEcrListImagesResponse, AwsEcrListScanResultsRequest, AwsEcrListScanResultsResponse } from '@blakeromano/plugin-aws-ecr-scan-backend';
+import { AwsEcrListImagesRequest, AwsEcrListImagesResponse, AwsEcrListScanResultsRequest, AwsEcrListScanResultsResponse } from '@ImagineLearning/plugin-aws-ecr-scan-backend';
 import { AwsEcrScanApi } from "./AwsEcrApi";
 
 export class AwsEcrClient implements AwsEcrScanApi {

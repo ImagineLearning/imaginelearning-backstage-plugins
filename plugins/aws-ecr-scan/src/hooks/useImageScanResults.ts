@@ -1,6 +1,6 @@
 import { Entity } from '@backstage/catalog-model';
 import {  useApi } from '@backstage/core-plugin-api';
-import { AwsEcrListScanResultsResponse } from '@blakeromano/plugin-aws-ecr-scan-backend';
+import { AwsEcrListScanResultsResponse } from '@ImagineLearning/plugin-aws-ecr-scan-backend';
 import { useAsync } from 'react-use';
 import { awsEcrScanApiRef } from '../api';
 import { ECR_ANNOTATION } from '../plugin';

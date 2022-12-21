@@ -1,5 +1,5 @@
 import { createApiRef } from '@backstage/core-plugin-api';
-import { AwsEcrListImagesRequest, AwsEcrListImagesResponse, AwsEcrListScanResultsRequest, AwsEcrListScanResultsResponse } from '@blakeromano/plugin-aws-ecr-scan-backend';
+import { AwsEcrListImagesRequest, AwsEcrListImagesResponse, AwsEcrListScanResultsRequest, AwsEcrListScanResultsResponse } from '@ImagineLearning/plugin-aws-ecr-scan-backend';
 
 /** @public */
 export const awsEcrScanApiRef = createApiRef<AwsEcrScanApi>({

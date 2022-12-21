@@ -1,6 +1,11 @@
 {
   "name": "root",
   "version": "1.0.0",
+  "author": {
+    "name": "Blake Romano",
+    "email": "blake.romano@imaginelearning.com",
+    "url": "https://github.com/blakeromano"
+  },
   "private": true,
   "engines": {
     "node": "16 || 18"
