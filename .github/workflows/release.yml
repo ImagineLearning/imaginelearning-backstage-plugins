@@ -7,9 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        plugin: ["@imaginelearning/plugin-aws-ecr-scan", "@imaginelearning/plugin-aws-ecr-scan-backend"]
     steps:
       - uses: actions/checkout@v3
       # Setup .npmrc file to publish to npm
