@@ -23,7 +23,7 @@ import {
 } from '@backstage/core-plugin-api';
 import { AwsEcrClient, awsEcrScanApiRef } from './api';
 
-export const ECR_ANNOTATION = 'aws.ecr/repository-name';
+export const ECR_ANNOTATION = 'aws.com/ecr-repository-name';
 
 export const isAwsEcrScanResultsAvailable = (entity: Entity) =>
   Boolean(entity.metadata.annotations?.[ECR_ANNOTATION]);
