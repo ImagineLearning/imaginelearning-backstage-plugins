@@ -1,5 +1,5 @@
 {
-  "name": "@ImagineLearning/plugin-aws-ecr-scan-backend",
+  "name": "@imaginelearning/plugin-aws-ecr-scan-backend",
   "version": "0.1.0",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -14,6 +14,11 @@
     "name": "Blake Romano",
     "email": "blake.romano@imaginelearning.com",
     "url": "https://github.com/blakeromano"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:ImagineLearning/imaginelearning-backstage-plugins",
+    "directory": "plugins/aws-ecr-scan-backend"
   },
   "backstage": {
     "role": "backend-plugin"

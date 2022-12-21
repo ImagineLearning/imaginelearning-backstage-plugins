@@ -58,7 +58,7 @@ import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 import {
   EntityEcrScanResultsContent, 
   isAwsEcrScanResultsAvailable 
-} from '@ImagineLearning/plugin-aws-ecr-scan';
+} from '@imaginelearning/plugin-aws-ecr-scan';
 
 const techdocsContent = (
   <EntityTechdocsContent>

@@ -11,7 +11,7 @@ This requires that where you run Backstage has AWS Credentials that has IAM Perm
 Create a file in `packages/backend/src/plugins/aws-ecr-scan.ts`
 
 ```typescript
-import { createRouter, AwsEcrScan } from '@ImagineLearning/plugin-aws-ecr-scan-backend';
+import { createRouter, AwsEcrScan } from '@imaginelearning/plugin-aws-ecr-scan-backend';
 import { Router } from 'express';
 import type { PluginEnvironment } from '../types';
 // ...
@@ -51,7 +51,7 @@ Edit the `packages/app/src/components/catalog/EntityPage.tsx` and add the import
 import {
   EntityEcrScanResultsContent, 
   isAwsEcrScanResultsAvailable 
-} from '@ImagineLearning/plugin-aws-ecr-scan';
+} from '@imaginelearning/plugin-aws-ecr-scan';
 ```
 
 Then add the following components:

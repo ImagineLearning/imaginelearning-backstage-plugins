@@ -7,16 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        plugin: ["@ImagineLearning/plugin-aws-ecr-scan", "@ImagineLearning/plugin-aws-ecr-scan-backend"]
+        plugin: ["@imaginelearning/plugin-aws-ecr-scan", "@imaginelearning/plugin-aws-ecr-scan-backend"]
     steps:
       - uses: actions/checkout@v3
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
+      - name: 'Login to npmjs npm repo .npmrc'
+        shell: bash
+        run: |
+          echo "@imaginelearning:registry=https://npm.pkg.github.com/ImagineLearning" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{secrets.PACKAGE_AUTH_TOKEN}}" >> .npmrc
+          echo "always-auth = true" >> .npmrc
       - run: yarn install
       - run: yarn tsc
-      - run: yarn workspace ${{ matrix.plugin }} publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: yarn publish

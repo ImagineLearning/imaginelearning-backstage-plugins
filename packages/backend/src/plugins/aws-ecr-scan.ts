@@ -1,4 +1,4 @@
-import { createRouter, AwsEcrScan } from '@ImagineLearning/plugin-aws-ecr-scan-backend';
+import { createRouter, AwsEcrScan } from '@imaginelearning/plugin-aws-ecr-scan-backend';
 import { Router } from 'express';
 import type { PluginEnvironment } from '../types';
 

@@ -2,7 +2,7 @@ import {
   Table,
   TableColumn,
 } from "@backstage/core-components";
-import { AwsEcrListScanResultsResponse } from '@ImagineLearning/plugin-aws-ecr-scan-backend';
+import { AwsEcrListScanResultsResponse } from '@imaginelearning/plugin-aws-ecr-scan-backend';
 import * as React from 'react';
 import {ECR} from "aws-sdk"
 import { Entity } from "@backstage/catalog-model";

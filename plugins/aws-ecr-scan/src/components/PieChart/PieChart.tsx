@@ -1,5 +1,5 @@
 /* eslint-disable guard-for-in */
-import { AwsEcrListScanResultsResponse } from "@ImagineLearning/plugin-aws-ecr-scan-backend";
+import { AwsEcrListScanResultsResponse } from "@imaginelearning/plugin-aws-ecr-scan-backend";
 import React, { useState } from 'react';
 import { Content, GaugeCard } from "@backstage/core-components"
 import { Grid } from "@material-ui/core";
