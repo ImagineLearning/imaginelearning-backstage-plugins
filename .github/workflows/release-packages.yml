@@ -18,8 +18,10 @@ jobs:
         shell: bash
         run: |
           echo "@imaginelearning:registry=https://npm.pkg.github.com/ImagineLearning" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{secrets.PACKAGE_AUTH_TOKEN}}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_AUTH_TOKEN }}" >> .npmrc
           echo "always-auth = true" >> .npmrc
       - run: yarn install
       - run: yarn tsc
-      - run: yarn workspace ${{ matrix.plugin }} publish
+      - run: yarn workspace ${{ matrix.plugin }} publish --public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_AUTH_TOKEN }}
